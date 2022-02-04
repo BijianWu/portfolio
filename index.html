@@ -13,6 +13,7 @@
 
     <!--=== CSS ==-->
     <link rel="stylesheet" href="assets/css/styles.css">
+
     <title>Bijian Wu Portfolio</title>
 </head>
 <body>
@@ -332,7 +333,7 @@
             </div>
         </section>
         <!--====== QUALIFICATION =======-->
-        <section class="qualification section">
+        <section class="qualification section" id="qualifications">
             <h2 class="section__title">Qualification</h2>
             <span class="section__subtitle">My personal journey</span>
 
@@ -908,5 +909,17 @@
     <script src="assets/js/swiper-bundle.min.js"></script>
     <!--===== MAIN JS ===-->
     <script src="assets/js/main.js"></script>
+
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script>
+        ScrollReveal({reset: true, distance: '30px', duration: 1000, delay:300});
+        ScrollReveal().reveal('#about')
+        ScrollReveal().reveal('#skills', {origin: 'left'})
+        ScrollReveal().reveal('#qualifications', {origin: 'right'})
+        // cannot do the reveal pop in effect for services due to how the scripts works
+        // ScrollReveal().reveal('#services')
+        ScrollReveal().reveal('#portfolio', { rotate: { x: 30,y: 30,z: 30}})
+        ScrollReveal().reveal('#contact', {origin: 'bottom'})
+    </script>
 </body>
 </html>
