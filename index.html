@@ -41,12 +41,12 @@
                     </li>
                     <li class ="nav__item">
                         <a href="#services" class="nav__link">
-                            <i class="uil uil-briefcase-alt nav__icon"></i> Services
+                            <i class="uil uil-briefcase-alt nav__icon"></i> Apps
                         </a>  
                     </li>
                     <li class ="nav__item">
                         <a href="#portfolio" class="nav__link">
-                            <i class="uil uil-scenery nav__icon"></i> Portfolio
+                            <i class="uil uil-scenery nav__icon"></i> Games
                         </a>  
                     </li>
                     <li class ="nav__item">
@@ -339,11 +339,11 @@
 
             <div class="qualification__container container">
                 <div class="qualification__tabs">
-                    <div class="qualification__button button--flex qualification__active" data-target='#education'>
+                    <div class="qualification__button button--flex " data-target='#education'>
                         <i class="uil uil-graduation-cap qualification__icon"></i>
                         Education
                     </div>
-                    <div class="qualification__button button--flex" data-target='#work'>
+                    <div class="qualification__button button--flex qualification__active" data-target='#work'>
                         <i class="uil uil-briefcase-alt qualification__icon"></i>
                         Work
                     </div>
@@ -351,7 +351,7 @@
 
                 <div class="qualification__sections">
                     <!--====== QUALIFICATION CONTENT 1 =======-->
-                    <div class="qualification__content qualification__active" data-content id="education">
+                    <div class="qualification__content " data-content id="education">
                         <!--====== QUALIFICATION 1 =======-->
                         <div class="qualification__data">
                             <div>
@@ -391,7 +391,7 @@
                     </div>
 
                     <!--====== WORK CONTENT 2 =======-->
-                    <div class="qualification__content" data-content id="work">
+                    <div class="qualification__content qualification__active" data-content id="work">
                         <!--====== WORK 1 =======-->
                         <div class="qualification__data">
                             <div>
@@ -431,17 +431,49 @@
                 </div>
             </div>
         </section>
+
+
+        <!-- apps i made -->
+        <!-- <section class="card-grid">
+            <div class="card card-shadow">
+                <div class="card-header card-image">
+                    Forever G full stack app
+                </div>
+                <div class="card-header card-image">
+                    <img src="assets/img/foreverg.png">
+                </div>
+    
+                <div class="card-body">
+                    Lorem, ipsum dolor sit amet consectetur 
+                    adipisicing elit. Error sapiente repellat commodi, 
+                    maiores accusamus aliquam ut quaerat quos, laudantium 
+                    deserunt voluptatum voluptatibus. Dolor, eaque nobis cupiditate 
+                    aliquid ipsum maiores? Maxime?
+                </div>
+    
+                <div class="card-footer">
+                    <button class="btn">Details</button>
+                    <button class="btn btn-outline">Contact Seller</button>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- apps i made -->
+
+
         <!--====== SERVICES =======-->
         <section class="services section" id="services">
-            <h2 class="section__title">Services</h2>
-            <span class="section__subtitle">What i offer</span>
+            <h2 class="section__title">Apps</h2>
+            <span class="section__subtitle">What i have created</span>
 
-            <div class="services__container container grid">
+            <div class="services__container container ">
                 <!--====== SERVICES 1=======-->
                 <div class="services__content">
                     <div>
                         <i class="uil uil-web-grid services__icon"></i>
-                        <h3 class="services__title">Game <br> Developer</h3>
+                        <h3 class="services__title">ForeverG <br> Fullstack web app</h3>
+                        <img src="assets/img/foreverg.png" alt="" class="myapps__img">
+     
                     </div>
 
                     <span class="button button--flex button--small button--link services__button">
@@ -451,96 +483,32 @@
 
                     <div class="services__modal">
                         <div class="services__modal-content">
-                            <h4 class="services__modal-title">Game <br> Developer</h4>
+                            <h4 class="services__modal-title">ForeverG <br> Fullstack web app features</h4>
                             <i class="uil uil-times services__modal-close"></i>
 
                             <ul class="services__modal-services grid">
                                 <li class="services__modal-service">
                                     <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>I develop game framework</p>
+                                    <p>Tracking everyday goals</p>
                                 </li>
                                 <li class="services__modal-service">
                                     <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Optimize game performance</p>
+                                    <p>lets user create daily diary</p>
                                 </li>
                                 <li class="services__modal-service">
                                     <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>I create Networking/Multiplayer game</p>
+                                    <p>Track future goals with deadline</p>
                                 </li>
 
                             </ul>
+                            <br/>
+                            <a href="https://bijianwu.github.io/ForeverG-frontend/" target="_blank" class="button button--flex button--small button--link">
+                                Link to the web app I created
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
                         </div>
+                        
                     </div>
-                </div>
-
-                <!--====== SERVICES 2=======-->
-                <div class="services__content">
-                    <div>
-                        <i class="uil uil-arrow services__icon"></i>
-                        <h3 class="services__title">Frontend <br> Developer</h3>
-                    </div>
-
-                    <span class="button button--flex button--small button--link services__button">
-                        View More
-                        <i class="uil uil-arrow-right button__icon"></i>
-                    </span>
-
-                    <div class="services__modal">
-                        <div class="services__modal-content">
-                            <h4 class="services__modal-title">Frontend <br> Developer</h4>
-                            <i class="uil uil-times services__modal-close"></i>
-
-                            <ul class="services__modal-services grid">
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>I create responsive websites</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>I can help with website design ideas</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>I am able to create website using different frameworks</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!--====== SERVICES 3=======-->
-                <div class="services__content">
-                    <div>
-                        <i class="uil uil-web-grid services__icon"></i>
-                        <h3 class="services__title">Backend <br> Developer</h3>
-                    </div>
-
-                    <span class="button button--flex button--small button--link services__button">
-                        View More
-                        <i class="uil uil-arrow-right button__icon"></i>
-                    </span>
-
-                    <div class="services__modal">
-                        <div class="services__modal-content">
-                            <h4 class="services__modal-title">Backend <br> Developer</h4>
-                            <i class="uil uil-times services__modal-close"></i>
-
-                            <ul class="services__modal-services grid">
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>I can help give direction of which backend technology to use</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>I can create backend server</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Load balancing the backend server</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>        
                     <!-- Portfolio 1 -->
                     <div class="services__modal">
                         <div class="services__modal-content portfolio__moda-content" style="overflow-y: scroll; max-height:85%;  margin-top: 50px; margin-bottom:50px;">
@@ -752,13 +720,15 @@
                             <p class="testimonial__client">Bug fixes</p>
                         </div>
                     </div>
+                </div>
+                
             </div>
         </section>
                                     
         <!--====== PORTFOIL =======-->
         <section class="portfolio section" id="portfolio">
-            <h2 class="section__title">Portfolio</h2>
-            <span class="section__subtitle">Most recent work</span>
+            <h2 class="section__title">Games</h2>
+            <span class="section__subtitle">Most recent games I have creatded</span>
 
             <div class="portfolio__container container swiper-container">
                 <div class="swiper-wrapper">
@@ -975,10 +945,10 @@
 
                 <ul class="footer__links">
                     <li>
-                        <a href="#services" class="footer__link">Services</a>
+                        <a href="#services" class="footer__link">Apps</a>
                     </li>
                     <li>
-                        <a href="#portfolio" class="footer__link">Portfolio</a>
+                        <a href="#portfolio" class="footer__link">Games</a>
                     </li>
                     <li>
                         <a href="#contact" class="footer__link">Contactme</a>
