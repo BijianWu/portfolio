@@ -737,6 +737,12 @@ img {
   margin-bottom: var(--mb-1-5);
 }
 
+.services__modal-des {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-1-5);
+}
+
 /* .services__modal-close{
     /* position: absolute;
     top:1rem;
