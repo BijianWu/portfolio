@@ -819,7 +819,9 @@ img {
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-0-5);
 }
-
+.protfolio__data {
+  text-align: center;
+}
 .portfolio__description {
   margin-bottom: var(--mb-0-75);
 }
@@ -1159,7 +1161,7 @@ img {
   .project__container,
   .contact__container,
   .footer__container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 2fr);
   }
 
   .qualification__sections {
