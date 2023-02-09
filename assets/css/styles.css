@@ -529,24 +529,45 @@ img {
   display: block;
   background-color: var(--first-color);
 }
-
+.skills__java {
+  width: 90%;
+}
 .skills__unity {
-  width: 85%;
+  width: 90%;
 }
 .skills__cshape {
   width: 90%;
 }
 .skills__cpp {
-  width: 80%;
+  width: 85%;
 }
 .skills__js {
+  width: 90%;
+}
+
+.skills__ts {
+  width: 85%;
+}
+.skills__html {
+  width: 95%;
+}
+
+.skills__css {
+  width: 85%;
+}
+
+.skills__react {
   width: 85%;
 }
 .skills__python {
-  width: 80%;
+  width: 85%;
 }
 .skills__node {
-  width: 80%;
+  width: 90%;
+}
+
+.skills__php {
+  width: 85%;
 }
 .skills__firebase {
   width: 80%;
@@ -554,14 +575,17 @@ img {
 .skills__playfab {
   width: 75%;
 }
+.skills__python {
+  width: 85%;
+}
 .skills__visual-studio {
-  width: 80%;
+  width: 85%;
 }
 .skills__unreal {
-  width: 80%;
+  width: 85%;
 }
 .skills__qt {
-  width: 70%;
+  width: 80%;
 }
 
 .skills__close .skills__list {
