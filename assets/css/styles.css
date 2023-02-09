@@ -299,10 +299,14 @@ img {
 .home__blob {
   width: 200px;
   fill: var(--first-color);
+  filter: drop-shadow(8px 8px 50px var(--text-color));
 }
 
 .home__blob-img {
   width: 170px;
+  filter: drop-shadow(8px 8px 30px var(--text-color));
+  /* filter: sepia(100%); */
+  /* filter: blur(0.5px); */
 }
 
 .home__data {
