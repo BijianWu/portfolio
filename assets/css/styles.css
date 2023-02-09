@@ -305,6 +305,7 @@ img {
 .home__blob-img {
   width: 170px;
   filter: drop-shadow(8px 8px 30px var(--text-color));
+  opacity: 0.8;
   /* filter: sepia(100%); */
   /* filter: blur(0.5px); */
 }
