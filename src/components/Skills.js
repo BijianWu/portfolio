@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function Skills(){
+    const [state, setState] = useState(1);
+    const skill_1_className = state === 1 ? "skills__content skills__open" : "skills__content skills__close";
+    const skill_2_className = state === 2 ? "skills__content skills__open" : "skills__content skills__close";
+    const skill_3_className = state === 3 ? "skills__content skills__open" : "skills__content skills__close";
+    const skill_4_className = state === 4 ? "skills__content skills__open" : "skills__content skills__close";
+
     return <>
       <section className="skills section" id="skills">
         <h2 className="section__title">Skills</h2>
@@ -10,16 +16,16 @@ export default function Skills(){
         <div>
 
         {/* <!--====== SKILLS 1=======--> */}
-        <div className="skills__content skills__open">
-            <div className="skills__header">
-            <i className="uil uil-server-network skills__icon"></i>
+        <div className={skill_1_className}>
+            <div className="skills__header" onClick={ () => setState(1)}>
+                <i className="uil uil-server-network skills__icon"></i>
 
-            <div>
-                <h1 className="skills__titles">Backend Developer</h1>
-                <span className="skills__subtitle">More than 1 years</span>
-            </div>
+                <div>
+                    <h1 className="skills__titles">Backend Developer</h1>
+                    <span className="skills__subtitle">More than 1 years</span>
+                </div>
 
-            <i className="uil uil-angle-down skills__arrow"></i>
+                <i className="uil uil-angle-down skills__arrow"></i>
             </div>
 
             <div className="skills__list grid">
@@ -70,8 +76,8 @@ export default function Skills(){
         </div>
 
         {/* <!--====== SKILLS 2=======--> */}
-        <div className="skills__content skills__close">
-            <div className="skills__header">
+        <div className={skill_2_className}>
+            <div className="skills__header"  onClick={ () => setState(2)}>
             <i className="uil uil-atom skills__icon"></i>
 
             <div>
@@ -137,8 +143,8 @@ export default function Skills(){
         </div>
 
     {/* <!--====== SKILLS 3=======--> */}
-    <div className="skills__content skills__close">
-        <div className="skills__header">
+    <div className={skill_3_className}>
+        <div className="skills__header"  onClick={ () => setState(3)}>
         <i className="uil uil-brackets-curly skills__icon"></i>
 
         <div>
@@ -184,8 +190,8 @@ export default function Skills(){
     </div>
 
             {/* <!--====== SKILLS 4=======--> */}
-            <div className="skills__content skills__close">
-            <div className="skills__header">
+            <div className={skill_4_className}>
+            <div className="skills__header"  onClick={ () => setState(4)}>
                 <i className="uil uil-apps skills__icon"></i>
 
                 <div>
