@@ -9,6 +9,7 @@ import Skills from "./components/Skills";
 import Qualification from "./components/Qualification";
 import AppsWork from "./components/AppsWork";
 import GamesWork from "./components/GamesWork";
+import ContactMe from "./components/ContactMe";
 export default function App(){
     return <>
         <Nav />
@@ -18,6 +19,7 @@ export default function App(){
         <Qualification />
         <AppsWork />
         <GamesWork />
+        <ContactMe />
         <Footer />
     </>
 }
