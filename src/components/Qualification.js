@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function Qualification(){
+  const [state, setState] = useState(2);
+  const educationStyles = state === 1 ? "qualification__active" : "";
+  const workStyles = state === 2 ? "qualification__active" : "";
     return <>
       <section className="qualification section" id="qualifications">
         <h2 className="section__title">Qualification</h2>
@@ -9,24 +12,26 @@ export default function Qualification(){
         <div className="qualification__container container">
           <div className="qualification__tabs">
             <div
-              className="qualification__button button--flex"
+              className={`qualification__button button--flex ${educationStyles}`}
               data-target="#education"
+              onClick={ () =>setState(1)}
             >
-              <i className="uil uil-graduation-cap qualification__icon"></i>
+              <i className="uil uil-graduation-cap qualification__icon" ></i>
               Education
             </div>
             <div
-              className="qualification__button button--flex qualification__active"
+              className={`qualification__button button--flex ${workStyles}`}
               data-target="#work"
+              onClick={ () =>setState(2)}
             >
-              <i className="uil uil-briefcase-alt qualification__icon"></i>
+              <i className="uil uil-briefcase-alt qualification__icon" ></i>
               Work
             </div>
           </div>
 
           <div className="qualification__sections">
             {/* <!--====== QUALIFICATION CONTENT 1 =======--> */}
-            <div className="qualification__content" data-content id="education">
+            <div className={`qualification__content ${educationStyles}`} data-content id="education">
               {/* <!--====== QUALIFICATION 1 =======--> */}
               <div className="qualification__data">
                 <div>
@@ -67,7 +72,7 @@ export default function Qualification(){
 
             {/* <!--====== WORK CONTENT 2 =======--> */}
             <div
-              className="qualification__content qualification__active"
+              className={`qualification__content ${workStyles}`}
               data-content
               id="work"
             >
