@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function AppsWork(){
+  const[modalOn_1, setModalOn_1] = useState(false);
+  const modalStyles_1 = modalOn_1 ? "active-modal" : "";
+
     return <>
       <section className="services section" id="services">
         <h2 className="section__title">Apps</h2>
@@ -20,15 +23,16 @@ export default function AppsWork(){
 
             <span
               className="button button--flex button--small button--link services__button"
+              onClick={() =>setModalOn_1(true)}
             >
               View More
               <i className="uil uil-arrow-right button__icon"></i>
             </span>
 
-            <div className="services__modal">
+            <div className={`services__modal ${modalStyles_1}`}>
               <div className="services__modal-content">
                 <h4 className="services__modal-title">ForeverG</h4>
-                <i className="uil uil-times services__modal-close"></i>
+                <i className="uil uil-times services__modal-close" onClick={() =>setModalOn_1(false)}></i>
                 <p className="services__modal-des">
                   Made by using ReactJS, Django and MySQL, below are the
                   features this app has
