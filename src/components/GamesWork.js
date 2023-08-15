@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function GamesWork(){
+  const[modalOn_1, setModalOn_1] = useState(false);
+  const modalStyles_1 = modalOn_1 ? "active-modal" : "";
+  
     return <>
       <section className="portfolio section" id="portfolio">
         <h2 className="section__title">Games</h2>
@@ -8,6 +11,11 @@ export default function GamesWork(){
 
         <div className="portfolio__container container swiper-container">
           <div className="swiper-wrapper">
+          
+
+
+
+
             {/* <!--====== PORTFOIL 1=======--> */}
             <div className="portfolio__content grid swiper-slide">
               <img src="assets/images/game1/1.png" alt="" className="portfolio__img" />
