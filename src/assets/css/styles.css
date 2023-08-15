@@ -1519,8 +1519,13 @@ img {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 0.5fr));
   justify-content: center;
-  align-items: center;
+  align-items: space-between;
   grid-auto-rows: 1fr;
-  row-gap: 15px;
+  row-gap: 25px;
   height: 100%;
+}
+
+.to-end {
+  justify-self: center;
+  align-self: end;
 }

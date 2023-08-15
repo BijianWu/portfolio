@@ -32,7 +32,7 @@ export default function GamesWork(){
             <div className="portfolio__content grid swiper-slide">
               <img src="assets/images/game1/1.png" alt="" className="portfolio__img" />
 
-              <div className="protfolio__data">
+              <div className="protfolio__data to-end">
                 <h3 className="portfolio__title">Space Shooter Game</h3>
                 <p className="portfolio__description">
                   Made using Visual Studio C# windows form
@@ -51,7 +51,7 @@ export default function GamesWork(){
             <div className="portfolio__content grid swiper-slide">
               <img src="assets/images/game2/3.png" alt="" className="portfolio__img" />
 
-              <div className="protfolio__data">
+              <div className="protfolio__data to-end">
                 <h3 className="portfolio__title">Sword Warrors</h3>
                 <p className="portfolio__description">
                   A 3D RPG Action game made using Unity
@@ -70,7 +70,7 @@ export default function GamesWork(){
             <div className="portfolio__content grid swiper-slide">
               <img src="assets/images/3.png" alt="" className="portfolio__img" />
 
-              <div className="protfolio__data">
+              <div className="protfolio__data to-end">
                 <h3 className="portfolio__title">Fantasy Travel</h3>
                 <p className="portfolio__description">
                   2D tile based RPG game made using Game Maker Studio
@@ -92,7 +92,7 @@ export default function GamesWork(){
                 className="portfolio__img"
               />
 
-              <div className="protfolio__data">
+              <div className="protfolio__data to-end">
                 <h3 className="portfolio__title">Galactic Defence</h3>
                 <p className="portfolio__description">
                   Mobile tower defence game made using Unity
@@ -114,7 +114,7 @@ export default function GamesWork(){
                 className="portfolio__img"
               />
 
-              <div className="protfolio__data">
+              <div className="protfolio__data to-end">
                 <h3 className="portfolio__title">Stealth Game prototype</h3>
                 <p className="portfolio__description">
                   3D Third person Stealth Game made using Unreal engine
@@ -132,11 +132,9 @@ export default function GamesWork(){
             <div className="portfolio__content grid swiper-slide">
               <img src="assets/images/6.png" alt="" className="portfolio__img" />
 
-              <div className="protfolio__data">
+              <div className="protfolio__data to-end">
                 <h3 className="portfolio__title">Galactic Get Away</h3>
-                <p className="portfolio__description">
-                  Mobile puzzle game made using Unity
-                </p>
+                <p className="portfolio__description">Mobile puzzle game made using Unity</p>
                 <span
                   className="button button--flex button--small services__button" onClick={() => toggleModal_6(prev => !prev)}
                 >
@@ -150,7 +148,7 @@ export default function GamesWork(){
             <div className="portfolio__content grid swiper-slide">
               <img src="assets/images/7.png" alt="" className="portfolio__img" />
 
-              <div className="protfolio__data">
+              <div className="protfolio__data to-end">
                 <h3 className="portfolio__title">Machine Battle Field</h3>
                 <p className="portfolio__description">
                   AR Mobile Multiplayer game made using Unity
@@ -168,7 +166,7 @@ export default function GamesWork(){
             <div className="portfolio__content grid swiper-slide">
               <img src="assets/images/8.png" alt="" className="portfolio__img" />
 
-              <div className="protfolio__data">
+              <div className="protfolio__data to-end">
                 <h3 className="portfolio__title">PIXI multiplayer</h3>
                 <p className="portfolio__description">
                   Brower-based Multiplayer game made using JavaScript
@@ -186,7 +184,7 @@ export default function GamesWork(){
             <div className="portfolio__content grid swiper-slide">
               <img src="assets/images/9.png" alt="" className="portfolio__img" />
 
-              <div className="protfolio__data">
+              <div className="protfolio__data to-end">
                 <h3 className="portfolio__title">Galactic Warrors</h3>
                 <p className="portfolio__description">
                   Mobile Platformer Shooter Multiplayer game made using Unity
