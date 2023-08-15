@@ -202,16 +202,7 @@ export default function GamesWork(){
               </div>
             </div>
           </div>
-          {/* <!-- Add Arrows--> */}
-          <div className="swiper-button-next">
-            <i className="uil uil-angle-right-b swiper-portfolio-icon"></i>
-          </div>
-          <div className="swiper-button-prev">
-            <i className="uil uil-angle-left-b swiper-portfolio-icon"></i>
-          </div>
 
-          {/* <!-- Add Pagination--> */}
-          <div className="swiper-pagination"></div>
         </div>
       </section>
     </>
