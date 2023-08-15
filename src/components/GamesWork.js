@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import GameModal from "./GameModal";
+import GameModal1 from "./GameModal1";
+import GameModal2 from "./GameModal2";
 
 export default function GamesWork(){
   const[isModal1On, toggleModal_1] = useState(false);
-
+  const[isModal2On, toggleModal_2] = useState(false);
     return <>
       <section className="portfolio section" id="portfolio">
         <h2 className="section__title">Games</h2>
@@ -27,7 +28,7 @@ export default function GamesWork(){
                   Demo
                   <i className="uil uil-arrow-right button__icon"></i>
                 </span>
-                <GameModal isActive={isModal1On} toggleActive={toggleModal_1}/>
+                <GameModal1 isActive={isModal1On} toggleActive={toggleModal_1}/>
               </div>
             </div>
 
@@ -41,11 +42,12 @@ export default function GamesWork(){
                   A 3D RPG Action game made using Unity
                 </p>
                 <span
-                  className="button button--flex button--small services__button"
+                  className="button button--flex button--small services__button" onClick={() => toggleModal_2(prev => !prev)}
                 >
                   Demo
                   <i className="uil uil-arrow-right button__icon"></i>
                 </span>
+                <GameModal2 isActive={isModal2On} toggleActive={toggleModal_2}/>
               </div>
             </div>
 

@@ -12,7 +12,7 @@ import GamesWork from "./components/GamesWork";
 import ContactMe from "./components/ContactMe";
 import Modal from "./components/Modal";
 import AppContext from "./AppContext";
-import GameModal from "./components/GameModal";
+import GameModal from "./components/GameModal1";
 
 export default function App(){
     const [isModalOn, setIsModalOn] = useState(true);

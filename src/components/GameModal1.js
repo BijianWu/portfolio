@@ -1,5 +1,5 @@
 import React from "react";
-export default function GameModal(props){
+export default function GameModal1(props){
     if(!props.isActive){ return null; }
 
     return <>
