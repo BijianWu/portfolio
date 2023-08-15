@@ -5,6 +5,7 @@ export default function AppsWork(){
   const modalStyles_1 = modalOn_1 ? "active-modal" : "";
 
     return <>
+
       <section className="services section" id="services">
         <h2 className="section__title">Apps</h2>
         <span className="section__subtitle">What i have created</span>

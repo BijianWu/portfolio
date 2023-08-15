@@ -1500,3 +1500,17 @@ img {
   width: 620px;
   border-radius: 30%;
 }
+
+#modal {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-modal-style {
+  overflow-y: scroll;
+  max-height: 85%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}

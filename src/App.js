@@ -12,15 +12,21 @@ import GamesWork from "./components/GamesWork";
 import ContactMe from "./components/ContactMe";
 import Modal from "./components/Modal";
 import AppContext from "./AppContext";
+import GameModal from "./components/GameModal";
+
 export default function App(){
     const [isModalOn, setIsModalOn] = useState(true);
+
+    const [modalTitle, setModalTitle] = useState("Space Shooter Game");
+
+    const [modalData, setModalData] = useState();
 
     const toggleModal = () => {
         setIsModalOn(previous => !previous);
     }
 
     return <>
-        <AppContext.Provider value={{isModalOn, toggleModal}}>
+        <AppContext.Provider value={{isModalOn, toggleModal, modalTitle, modalData}}>
             <Nav />
             <Home />
             <AboutMe />
@@ -29,7 +35,8 @@ export default function App(){
             <AppsWork />
             <GamesWork />
             <ContactMe />
-            <Modal />
+
+            <GameModal />
             <Footer />
         </AppContext.Provider>
 
