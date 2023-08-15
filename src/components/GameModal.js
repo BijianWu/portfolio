@@ -1,13 +1,16 @@
 import React, { useContext, useState } from "react";
 import AppContext from "../AppContext";
 
-export default function GameModal(){
-    const[isActive, setIsActive] = useState(true);
-    const activeStyle = isActive? "active-modal" : "";
+export default function GameModal(props){
+
+    if(!props.isActive){
+        return null;
+    }
+
     return <>
     <div className="services__container container">
         <div className="services__content">
-            <div className={`services__modal ${activeStyle}`} onClick={() => setIsActive(prev => !prev)}>
+            <div className={`services__modal active-modal`} onClick={() => props.toggleActive()}>
             <div className="services__modal-content portfolio__moda-content game-modal-style">
                 
                 <div className="">

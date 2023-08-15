@@ -1,9 +1,9 @@
 import React, { useState } from "react";
+import GameModal from "./GameModal";
 
 export default function GamesWork(){
-  const[modalOn_1, setModalOn_1] = useState(false);
-  const modalStyles_1 = modalOn_1 ? "active-modal" : "";
-  
+  const[isModal1On, toggleModal_1] = useState(false);
+
     return <>
       <section className="portfolio section" id="portfolio">
         <h2 className="section__title">Games</h2>
@@ -22,11 +22,12 @@ export default function GamesWork(){
                   Made using Visual Studio C# windows form
                 </p>
                 <span
-                  className="button button--flex button--small services__button"
+                  className="button button--flex button--small services__button" onClick={() => toggleModal_1(prev => !prev)}
                 >
                   Demo
                   <i className="uil uil-arrow-right button__icon"></i>
                 </span>
+                <GameModal isActive={isModal1On} toggleActive={toggleModal_1}/>
               </div>
             </div>
 
