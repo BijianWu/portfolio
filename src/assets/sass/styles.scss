@@ -1122,6 +1122,7 @@ img {
 /*==== MEDIA QUERIES ====*/
 /* For small devices */
 @media screen and (max-width: 350px) {
+
     .container {
         margin-left: var(--mb-1);
         margin-right: var(--mb-1);
@@ -1583,3 +1584,14 @@ img {
     margin-top: 50px;
     margin-bottom: 50px;
 }
+
+.games-work-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 0.5fr));
+    justify-content: center;
+    align-items: center;
+    grid-auto-rows: 1fr;
+    row-gap: 15px;
+    height: 100%;
+}
+

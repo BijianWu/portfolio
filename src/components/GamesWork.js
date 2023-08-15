@@ -26,7 +26,7 @@ export default function GamesWork(){
         <span className="section__subtitle">Most recent games I have creatded</span>
 
         <div className="portfolio__container container swiper-container">
-          <div className="swiper-wrapper">
+          <div className="swiper-wrapper  games-work-grid">
 
             {/* <!--====== PORTFOIL 1=======--> */}
             <div className="portfolio__content grid swiper-slide">
