@@ -20,6 +20,88 @@ export default function GamesWork(){
   const[isModal8On, toggleModal_8] = useState(false);
   const[isModal9On, toggleModal_9] = useState(false);
 
+  const bodyCannotScrollCheck = (isModalOn) => {
+    if(isModalOn){
+      if(!document.body.classList.contains("cannotScroll")){
+        document.body.classList.add("cannotScroll");
+      } 
+    } else{
+      document.body.classList.remove("cannotScroll");
+    }
+  }
+
+  const wrappedToggleModal_1 = () => {
+    toggleModal_1(prev => {
+      const opposite =!prev;
+      bodyCannotScrollCheck(opposite);
+      return opposite;
+    })
+  }
+
+  const wrappedToggleModal_2 = () => {
+    toggleModal_2(prev => {
+      const opposite =!prev;
+      bodyCannotScrollCheck(opposite);
+      return opposite;
+    })
+  }
+
+  const wrappedToggleModal_3 = () => {
+    toggleModal_3(prev => {
+      const opposite =!prev;
+      bodyCannotScrollCheck(opposite);
+      return opposite;
+    })
+  }
+
+  const wrappedToggleModal_4 = () => {
+    toggleModal_4(prev => {
+      const opposite =!prev;
+      bodyCannotScrollCheck(opposite);
+      return opposite;
+    })
+  }
+
+  const wrappedToggleModal_5 = () => {
+    toggleModal_5(prev => {
+      const opposite =!prev;
+      bodyCannotScrollCheck(opposite);
+      return opposite;
+    })
+  }
+
+  const wrappedToggleModal_6 = () => {
+    toggleModal_6(prev => {
+      const opposite =!prev;
+      bodyCannotScrollCheck(opposite);
+      return opposite;
+    })
+  }
+
+  const wrappedToggleModal_7 = () => {
+    toggleModal_7(prev => {
+      const opposite =!prev;
+      bodyCannotScrollCheck(opposite);
+      return opposite;
+    })
+  }
+
+  const wrappedToggleModal_8 = () => {
+    toggleModal_8(prev => {
+      const opposite =!prev;
+      bodyCannotScrollCheck(opposite);
+      return opposite;
+    })
+  }
+
+  const wrappedToggleModal_9 = () => {
+    toggleModal_9(prev => {
+      const opposite =!prev;
+      bodyCannotScrollCheck(opposite);
+      return opposite;
+    })
+  }
+
     return <>
       <section className="portfolio section" id="portfolio">
         <h2 className="section__title">Games</h2>
@@ -38,12 +120,12 @@ export default function GamesWork(){
                   Made using Visual Studio C# windows form
                 </p>
                 <span
-                  className="button button--flex button--small services__button" onClick={() => toggleModal_1(prev => !prev)}
+                  className="button button--flex button--small services__button" onClick={wrappedToggleModal_1}
                 >
                   Demo
                   <i className="uil uil-arrow-right button__icon"></i>
                 </span>
-                <GameModal1 isActive={isModal1On} toggleActive={toggleModal_1}/>
+                <GameModal1 isActive={isModal1On} toggleActive={wrappedToggleModal_1}/>
               </div>
             </div>
 
@@ -57,12 +139,12 @@ export default function GamesWork(){
                   A 3D RPG Action game made using Unity
                 </p>
                 <span
-                  className="button button--flex button--small services__button" onClick={() => toggleModal_2(prev => !prev)}
+                  className="button button--flex button--small services__button" onClick={wrappedToggleModal_2}
                 >
                   Demo
                   <i className="uil uil-arrow-right button__icon"></i>
                 </span>
-                <GameModal2 isActive={isModal2On} toggleActive={toggleModal_2}/>
+                <GameModal2 isActive={isModal2On} toggleActive={wrappedToggleModal_2}/>
               </div>
             </div>
 
@@ -76,12 +158,12 @@ export default function GamesWork(){
                   2D tile based RPG game made using Game Maker Studio
                 </p>
                 <span
-                  className="button button--flex button--small services__button" onClick={() => toggleModal_3(prev => !prev)}
+                  className="button button--flex button--small services__button" onClick={wrappedToggleModal_3}
                 >
                   Demo
                   <i className="uil uil-arrow-right button__icon"></i>
                 </span>
-                <GameModal3 isActive={isModal3On} toggleActive={toggleModal_3}/>
+                <GameModal3 isActive={isModal3On} toggleActive={wrappedToggleModal_3}/>
               </div>
             </div>
             {/* <!--====== PORTFOIL 4=======--> */}
@@ -98,12 +180,12 @@ export default function GamesWork(){
                   Mobile tower defence game made using Unity
                 </p>
                 <span
-                  className="button button--flex button--small services__button" onClick={() => toggleModal_4(prev => !prev)}
+                  className="button button--flex button--small services__button" onClick={wrappedToggleModal_4}
                 >
                   Demo
                   <i className="uil uil-arrow-right button__icon"></i>
                 </span>
-                <GameModal4 isActive={isModal4On} toggleActive={toggleModal_4}/>
+                <GameModal4 isActive={isModal4On} toggleActive={wrappedToggleModal_4}/>
               </div>
             </div>
             {/* <!--====== PORTFOIL 5=======--> */}
@@ -120,12 +202,12 @@ export default function GamesWork(){
                   3D Third person Stealth Game made using Unreal engine
                 </p>
                 <span
-                  className="button button--flex button--small services__button" onClick={() => toggleModal_5(prev => !prev)}
+                  className="button button--flex button--small services__button" onClick={wrappedToggleModal_5}
                 >
                   Demo
                   <i className="uil uil-arrow-right button__icon"></i>
                 </span>
-                <GameModal5 isActive={isModal5On} toggleActive={toggleModal_5}/>
+                <GameModal5 isActive={isModal5On} toggleActive={wrappedToggleModal_5}/>
               </div>
             </div>
             {/* <!--====== PORTFOIL 6=======--> */}
@@ -136,12 +218,12 @@ export default function GamesWork(){
                 <h3 className="portfolio__title">Galactic Get Away</h3>
                 <p className="portfolio__description">Mobile puzzle game made using Unity</p>
                 <span
-                  className="button button--flex button--small services__button" onClick={() => toggleModal_6(prev => !prev)}
+                  className="button button--flex button--small services__button" onClick={wrappedToggleModal_6}
                 >
                   Demo
                   <i className="uil uil-arrow-right button__icon"></i>
                 </span>
-                <GameModal6 isActive={isModal6On} toggleActive={toggleModal_6}/>
+                <GameModal6 isActive={isModal6On} toggleActive={wrappedToggleModal_6}/>
               </div>
             </div>
             {/* <!--====== PORTFOIL 7=======--> */}
@@ -154,12 +236,12 @@ export default function GamesWork(){
                   AR Mobile Multiplayer game made using Unity
                 </p>
                 <span
-                  className="button button--flex button--small services__button" onClick={() => toggleModal_7(prev => !prev)}
+                  className="button button--flex button--small services__button" onClick={wrappedToggleModal_7}
                 >
                   Demo
                   <i className="uil uil-arrow-right button__icon"></i>
                 </span>
-                <GameModal7 isActive={isModal7On} toggleActive={toggleModal_7}/>
+                <GameModal7 isActive={isModal7On} toggleActive={wrappedToggleModal_7}/>
               </div>
             </div>
             {/* <!--====== PORTFOIL 8=======--> */}
@@ -172,12 +254,12 @@ export default function GamesWork(){
                   Brower-based Multiplayer game made using JavaScript
                 </p>
                 <span
-                  className="button button--flex button--small services__button" onClick={() => toggleModal_8(prev => !prev)}
+                  className="button button--flex button--small services__button" onClick={wrappedToggleModal_8}
                 >
                   Demo
                   <i className="uil uil-arrow-right button__icon"></i>
                 </span>
-                <GameModal8 isActive={isModal8On} toggleActive={toggleModal_8}/>
+                <GameModal8 isActive={isModal8On} toggleActive={wrappedToggleModal_8}/>
               </div>
             </div>
             {/* <!--====== PORTFOIL 9=======--> */}
@@ -191,12 +273,12 @@ export default function GamesWork(){
                   and LiteNetLib server
                 </p>
                 <span
-                  className="button button--flex button--small services__button" onClick={() => toggleModal_9(prev => !prev)}
+                  className="button button--flex button--small services__button" onClick={wrappedToggleModal_9}
                 >
                   Demo
                   <i className="uil uil-arrow-right button__icon"></i>
                 </span>
-                <GameModal9 isActive={isModal9On} toggleActive={toggleModal_9}/>
+                <GameModal9 isActive={isModal9On} toggleActive={wrappedToggleModal_9}/>
               </div>
             </div>
           </div>
