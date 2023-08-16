@@ -40,7 +40,7 @@ export default function AppsWork(){
         <span className="section__subtitle">What i have created</span>
 
         <div className="services__container container myapps__img_container">
-          {/* <!--====== SERVICES 1=======--> */}
+          {/* <!--====== App 1=======--> */}
           <div className="services__content">
             <div className=" ">
 
@@ -66,7 +66,7 @@ export default function AppsWork(){
 
 
 
-          {/* <!--====== SERVICES 2=======--> */}
+          {/* <!--====== App 2=======--> */}
           <div className="services__content">
             <div className=" ">
 
@@ -94,9 +94,9 @@ export default function AppsWork(){
 
         </div>
 
-{/* belows are for modals */}
-                    {/* modal for app 1 */}
-                    <div className={`services__modal ${modalStyles_1}`}>
+            {/* belows are for modals */}
+            {/* modal for app 1 */}
+            <div className={`services__modal ${modalStyles_1}`}>
               <div className="services__modal-content">
                 <h4 className="services__modal-title">ForeverG</h4>
                 <i className="uil uil-times services__modal-close" onClick={wrappedToggleModal_1}></i>
