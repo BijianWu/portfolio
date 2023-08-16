@@ -7,6 +7,13 @@ export default function Skills(){
     const skill_3_className = state === 3 ? "skills__content skills__open" : "skills__content skills__close";
     const skill_4_className = state === 4 ? "skills__content skills__open" : "skills__content skills__close";
 
+    const changeState = (num) => {
+        if(state === num) {
+            setState(0);
+        } else{
+            setState(num);
+        }
+    }
     return <>
       <section className="skills section" id="skills">
         <h2 className="section__title">Skills</h2>
@@ -17,12 +24,12 @@ export default function Skills(){
 
         {/* <!--====== SKILLS 1=======--> */}
         <div className={skill_1_className}>
-            <div className="skills__header" onClick={ () => setState(1)}>
+            <div className="skills__header" onClick={ () => changeState(1)}>
                 <i className="uil uil-server-network skills__icon"></i>
 
                 <div>
                     <h1 className="skills__titles">Backend Developer</h1>
-                    <span className="skills__subtitle">More than 1 years</span>
+                    <span className="skills__subtitle">More than 2 years</span>
                 </div>
 
                 <i className="uil uil-angle-down skills__arrow"></i>
@@ -77,12 +84,12 @@ export default function Skills(){
 
         {/* <!--====== SKILLS 2=======--> */}
         <div className={skill_2_className}>
-            <div className="skills__header"  onClick={ () => setState(2)}>
+            <div className="skills__header"  onClick={ () => changeState(2)}>
             <i className="uil uil-atom skills__icon"></i>
 
             <div>
                 <h1 className="skills__titles">Frontend Developer</h1>
-                <span className="skills__subtitle">More than 2 years</span>
+                <span className="skills__subtitle">More than 3 years</span>
             </div>
             <i className="uil uil-angle-down skills__arrow"></i>
             </div>
@@ -144,12 +151,12 @@ export default function Skills(){
 
     {/* <!--====== SKILLS 3=======--> */}
     <div className={skill_3_className}>
-        <div className="skills__header"  onClick={ () => setState(3)}>
+        <div className="skills__header"  onClick={ () => changeState(3)}>
         <i className="uil uil-brackets-curly skills__icon"></i>
 
         <div>
             <h1 className="skills__titles">Game Developer</h1>
-            <span className="skills__subtitle">More than 1 years</span>
+            <span className="skills__subtitle">More than 2 years</span>
         </div>
 
         <i className="uil uil-angle-down skills__arrow"></i>
@@ -163,6 +170,16 @@ export default function Skills(){
             </div>
             <div className="skills__bar">
             <span className="skills__percentage skills__unity"></span>
+            </div>
+        </div>
+
+        <div className="skills__data">
+            <div className="skills__titles">
+                <h3 className="skills__name">Unreal Engine</h3>
+                <span className="skills__number">85%</span>
+            </div>
+            <div className="skills__bar">
+                <span className="skills__percentage skills__unreal"></span>
             </div>
         </div>
 
@@ -191,12 +208,12 @@ export default function Skills(){
 
             {/* <!--====== SKILLS 4=======--> */}
             <div className={skill_4_className}>
-            <div className="skills__header"  onClick={ () => setState(4)}>
+            <div className="skills__header"  onClick={ () => changeState(4)}>
                 <i className="uil uil-apps skills__icon"></i>
 
                 <div>
                 <h1 className="skills__titles">Software Developer</h1>
-                <span className="skills__subtitle">More than 1 years</span>
+                <span className="skills__subtitle">More than 2 years</span>
                 </div>
                 <i className="uil uil-angle-down skills__arrow"></i>
             </div>
@@ -215,24 +232,25 @@ export default function Skills(){
                 </div>
 
                 <div className="skills__data">
-                <div className="skills__titles">
-                    <h3 className="skills__name">Unreal Engine</h3>
-                    <span className="skills__number">85%</span>
-                </div>
-                <div className="skills__bar">
-                    <span className="skills__percentage skills__unreal"></span>
-                </div>
+                    <div className="skills__titles">
+                        <h3 className="skills__name">Electron Js</h3>
+                        <span className="skills__number">85%</span>
+                    </div>
+                    <div className="skills__bar">
+                        <span className="skills__percentage skills__electronjs"></span>
+                    </div>
                 </div>
 
                 <div className="skills__data">
-                <div className="skills__titles">
-                    <h3 className="skills__name">QT</h3>
-                    <span className="skills__number">80%</span>
+                    <div className="skills__titles">
+                        <h3 className="skills__name">QT</h3>
+                        <span className="skills__number">80%</span>
+                    </div>
+                    <div className="skills__bar">
+                        <span className="skills__percentage skills__qt"></span>
+                    </div>
                 </div>
-                <div className="skills__bar">
-                    <span className="skills__percentage skills__qt"></span>
-                </div>
-                </div>
+                
             </div>
             </div>
 
