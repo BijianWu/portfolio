@@ -1534,7 +1534,7 @@ img {
 
 .games-work-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 0.5fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 100fr));
   justify-content: center;
   align-items: space-between;
   grid-auto-rows: 1fr;
@@ -1553,5 +1553,15 @@ img {
   }
   .services__content {
     width: 94%;
+  }
+  .portfolio__img {
+    width: 100%;
+  }
+  .games-work-grid {
+    align-items: flex-start;
+    grid-auto-rows: 0.5fr;
+  }
+  .section__subtitle {
+    margin-bottom: var(--mb-2);
   }
 }
