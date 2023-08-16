@@ -7,6 +7,32 @@ export default function AppsWork(){
   const[modalOn_2, setModalOn_2] = useState(false);
   const modalStyles_2 = modalOn_2 ? "active-modal" : "";
 
+  const bodyCannotScrollCheck = (isModalOn) => {
+    if(isModalOn){
+      if(!document.body.classList.contains("cannotScroll")){
+        document.body.classList.add("cannotScroll");
+      } 
+    } else{
+      document.body.classList.remove("cannotScroll");
+    }
+  }
+
+  const wrappedToggleModal_1 = () => {
+    setModalOn_1(prev => {
+      const opposite =!prev;
+      bodyCannotScrollCheck(opposite);
+      return opposite;
+    })
+  }
+
+  const wrappedToggleModal_2 = () => {
+    setModalOn_2(prev => {
+      const opposite =!prev;
+      bodyCannotScrollCheck(opposite);
+      return opposite;
+    })
+  }
+
     return <>
 
       <section className="services section" id="services">
@@ -30,7 +56,7 @@ export default function AppsWork(){
 
                 <span
                 className="button button--flex button--small button--link services__button"
-                onClick={() =>setModalOn_1(true)}
+                onClick={wrappedToggleModal_1}
               >
                 View More
                 <i className="uil uil-arrow-right button__icon"></i>
@@ -56,7 +82,7 @@ export default function AppsWork(){
 
                 <span
                 className="button button--flex button--small button--link services__button"
-                onClick={() =>setModalOn_2(true)}
+                onClick={wrappedToggleModal_2}
               >
                 View More
                 <i className="uil uil-arrow-right button__icon"></i>
@@ -73,7 +99,7 @@ export default function AppsWork(){
                     <div className={`services__modal ${modalStyles_1}`}>
               <div className="services__modal-content">
                 <h4 className="services__modal-title">ForeverG</h4>
-                <i className="uil uil-times services__modal-close" onClick={() =>setModalOn_1(false)}></i>
+                <i className="uil uil-times services__modal-close" onClick={wrappedToggleModal_1}></i>
                 <p className="services__modal-des">
                   Made by using ReactJS, Django and MySQL, below are the
                   features this app has
@@ -108,7 +134,7 @@ export default function AppsWork(){
             <div className={`services__modal ${modalStyles_2}`}>
               <div className="services__modal-content">
                 <h4 className="services__modal-title">Personal Porfolio</h4>
-                <i className="uil uil-times services__modal-close" onClick={() =>setModalOn_2(false)}></i>
+                <i className="uil uil-times services__modal-close" onClick={wrappedToggleModal_2}></i>
                 <p className="services__modal-des">
                   Made by using ReactJS, Html and plain css, which has features like
                 </p>
