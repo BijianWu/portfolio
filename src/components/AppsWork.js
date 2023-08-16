@@ -13,22 +13,27 @@ export default function AppsWork(){
         <div className="services__container container">
           {/* <!--====== SERVICES 1=======--> */}
           <div className="services__content">
-            <div>
-              <i className="uil uil-web-grid services__icon"></i>
+            <div className=" myapps__img_container">
+
               <h3 className="services__title">
-                ForeverG <br />
-                Fullstack web app
+              <span className="uil uil-web-grid services__icon"></span>
+                ForeverG -
+                <i className="testimonial__client">Fullstack web app</i>
+                
               </h3>
-              <img src="assets/images/foreverg.png" alt="" className="myapps__img" />
+              <div className="">
+                <img src="assets/images/foreverg.png" alt="" className="myapps__img" />
+              </div>
+
+                <span
+                className="button button--flex button--small button--link services__button"
+                onClick={() =>setModalOn_1(true)}
+              >
+                View More
+                <i className="uil uil-arrow-right button__icon"></i>
+              </span>
             </div>
 
-            <span
-              className="button button--flex button--small button--link services__button"
-              onClick={() =>setModalOn_1(true)}
-            >
-              View More
-              <i className="uil uil-arrow-right button__icon"></i>
-            </span>
 
             <div className={`services__modal ${modalStyles_1}`}>
               <div className="services__modal-content">
