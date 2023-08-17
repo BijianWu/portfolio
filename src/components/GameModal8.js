@@ -3,16 +3,14 @@ export default function GameModal8(props){
     if(!props.isActive){ return null; }
 
     return <>
-    <div className={`services__modal active-modal`} onClick={() => props.toggleActive()}>
+    <div className={`services__modal active-modal`}>
+      <div className="hidden-clickable" onClick={() => props.toggleActive()}></div>
         <div className="services__modal-content portfolio__moda-content game-modal-style">
         
         <h4 className="services__modal-title">
         PIXI multiplayer <br />
         Game
       </h4>
-      <i
-        className="uil uil-times services__modal-close portfolio__modal-close"
-      ></i>
 
       <h5 className="testimonial__name">
         Portfolio 8 : PIXI multiplayer Game

@@ -1565,3 +1565,8 @@ img {
     margin-bottom: var(--mb-2);
   }
 }
+.hidden-clickable {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
