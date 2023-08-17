@@ -97,9 +97,10 @@ export default function AppsWork(){
             {/* belows are for modals */}
             {/* modal for app 1 */}
             <div className={`services__modal ${modalStyles_1}`}>
+              <div className="hidden-clickable"  onClick={wrappedToggleModal_1}></div>
               <div className="services__modal-content">
                 <h4 className="services__modal-title">ForeverG</h4>
-                <i className="uil uil-times services__modal-close" onClick={wrappedToggleModal_1}></i>
+   
                 <p className="services__modal-des">
                   Made by using ReactJS, Django and MySQL, below are the
                   features this app has
@@ -132,9 +133,9 @@ export default function AppsWork(){
           
             {/* modal for app 2 */}
             <div className={`services__modal ${modalStyles_2}`}>
+              <div className="hidden-clickable"  onClick={wrappedToggleModal_2}></div>
               <div className="services__modal-content">
                 <h4 className="services__modal-title">Personal Porfolio</h4>
-                <i className="uil uil-times services__modal-close" onClick={wrappedToggleModal_2}></i>
                 <p className="services__modal-des">
                   Made by using ReactJS, Html and plain css, which has features like
                 </p>
