@@ -55,7 +55,7 @@ export default function AppsWork(){
               </div>
 
                 <span
-                className="button button--flex button--small button--link services__button"
+                className="button button--flex button--small button--link services__button font-lg pt-1"
                 onClick={wrappedToggleModal_1}
               >
                 View More
@@ -81,7 +81,7 @@ export default function AppsWork(){
               </div>
 
                 <span
-                className="button button--flex button--small button--link services__button"
+                className="button button--flex button--small button--link services__button font-lg pt-1"
                 onClick={wrappedToggleModal_2}
               >
                 View More
