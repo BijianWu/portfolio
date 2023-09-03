@@ -2,7 +2,7 @@ import { createContext } from "react";
 
 const AppContext = createContext({
     isModalOn: false,
-    setModalOn: () => {isModalOn = !isModalOn},
+    setModalOn: () => {},
 });
 
 export default AppContext;
