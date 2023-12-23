@@ -59,7 +59,7 @@ export default function Home(){
                     className="home__blob-img"
                     x="12"
                     y="2"
-                    xlinkHref="assets/images/bijian_wu.png"
+                    xlinkHref="../assets/images/bijian_wu.png"
                   />
                 </g>
               </svg>
