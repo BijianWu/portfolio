@@ -731,6 +731,20 @@ img {
   font-weight: var(--font-medium);
 }
 
+.services__button__parrent {
+  padding: 0.5rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+  border-radius: 0.5rem;
+  border: 1px solid var(--first-color);
+}
+
+.services__button__parrent:hover {
+  border: 1px solid var(--first-color-lighter);
+}
+
 .services__button {
   cursor: pointer;
   font-size: var(--small-font-size);
@@ -1413,7 +1427,7 @@ img {
 /* apps I made section stylings */
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px 1fr));
   gap: 1rem;
   align-items: flex-start;
   justify-items: center;

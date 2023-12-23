@@ -54,13 +54,16 @@ export default function AppsWork(){
                 <img src="./../assets/images/foreverg.png" alt="" className="myapps__img" />
               </div>
 
+              <div className="services__button__parrent">
                 <span
-                className="button button--flex button--small button--link services__button font-lg pt-1"
-                onClick={wrappedToggleModal_1}
-              >
-                View More
-                <i className="uil uil-arrow-right button__icon"></i>
-              </span>
+                  className="button button--flex button--small button--link services__button"
+                  onClick={wrappedToggleModal_1}
+                >
+                  View More
+                  <i className="uil uil-arrow-right button__icon"></i>
+                </span>
+              </div>
+
             </div>
           </div>
 
@@ -79,14 +82,16 @@ export default function AppsWork(){
               <div className="">
                 <img src="assets/images/porfolio-web.png" alt="" className="myapps__img" />
               </div>
-
+              <div className="services__button__parrent">
                 <span
-                className="button button--flex button--small button--link services__button font-lg pt-1"
-                onClick={wrappedToggleModal_2}
-              >
-                View More
-                <i className="uil uil-arrow-right button__icon"></i>
-              </span>
+                  className="button button--flex button--small button--link services__button"
+                  onClick={wrappedToggleModal_2}
+                >
+                  View More
+                  <i className="uil uil-arrow-right button__icon"></i>
+                </span>
+              </div>
+
             </div>
           </div>
           
