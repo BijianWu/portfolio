@@ -51,7 +51,7 @@ export default function AppsWork(){
                 
               </h3>
               <div className="">
-                <img src="./../assets/images/foreverg.png" alt="" className="myapps__img" />
+                <img src="assets/images/foreverg.png" alt="" className="myapps__img" />
               </div>
 
               <div className="services__button__parrent">
