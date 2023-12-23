@@ -25,7 +25,7 @@ export default function GameModal7(props){
                 <p className="testimonial__name">
                   Following is the example gameplay of the game.
                 </p>
-                <video width="560" height="480" controls autoPlay muted>
+                <video width="100%" height="480" controls autoPlay muted>
                   <source
                     src="assets/video/machineBattleField.mp4"
                     type="video/mp4"
