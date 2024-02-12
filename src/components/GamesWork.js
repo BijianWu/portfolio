@@ -8,7 +8,7 @@ import GameModal6 from "./GameModal6";
 import GameModal7 from "./GameModal7";
 import GameModal8 from "./GameModal8";
 import GameModal9 from "./GameModal9";
-
+import GameModal10 from "./GameModal10";
 export default function GamesWork(){
   const[isModal1On, toggleModal_1] = useState(false);
   const[isModal2On, toggleModal_2] = useState(false);
@@ -19,7 +19,7 @@ export default function GamesWork(){
   const[isModal7On, toggleModal_7] = useState(false);
   const[isModal8On, toggleModal_8] = useState(false);
   const[isModal9On, toggleModal_9] = useState(false);
-
+  const[isModal10On, toggleModal_10] = useState(false);
   const bodyCannotScrollCheck = (isModalOn) => {
     if(isModalOn){
       if(!document.body.classList.contains("cannotScroll")){
@@ -102,6 +102,13 @@ export default function GamesWork(){
     })
   }
 
+  const wrappedToggleModal_10 = () => {
+    toggleModal_10(prev => {
+      const opposite =!prev;
+      bodyCannotScrollCheck(opposite);
+      return opposite;
+    })
+  }
     return <>
       <section className="portfolio section" id="portfolio">
         <h2 className="section__title">Games</h2>
@@ -279,6 +286,25 @@ export default function GamesWork(){
                   <i className="uil uil-arrow-right button__icon"></i>
                 </span>
                 <GameModal9 isActive={isModal9On} toggleActive={wrappedToggleModal_9}/>
+              </div>
+            </div>
+            {/* <!--====== PORTFOIL 10=======--> */}
+            <div className="portfolio__content grid swiper-slide">
+              <img src="assets/images/10.png" alt="" className="portfolio__img" />
+
+              <div className="protfolio__data to-end">
+                <h3 className="portfolio__title">Ultimate battle legend</h3>
+                <p className="portfolio__description">
+                  Mobile Clash Royal styling game made using Unity
+                  and socket io on the backend
+                </p>
+                <span
+                  className="button button--flex button--small services__button" onClick={wrappedToggleModal_10}
+                >
+                  Demo
+                  <i className="uil uil-arrow-right button__icon"></i>
+                </span>
+                <GameModal10 isActive={isModal10On} toggleActive={wrappedToggleModal_10}/>
               </div>
             </div>
           </div>
