@@ -10,6 +10,9 @@ export default function AppsWork(){
   const[modalOn_3, setModalOn_3] = useState(false);
   const modalStyles_3 = modalOn_3 ? "active-modal" : "";
 
+  const[modalOn_4, setModalOn_4] = useState(false);
+  const modalStyles_4 = modalOn_4 ? "active-modal" : "";
+
   const bodyCannotScrollCheck = (isModalOn) => {
     if(isModalOn){
       if(!document.body.classList.contains("cannotScroll")){
@@ -38,6 +41,14 @@ export default function AppsWork(){
 
   const wrappedToggleModal_3 = () => {
     setModalOn_3(prev => {
+      const opposite =!prev;
+      bodyCannotScrollCheck(opposite);
+      return opposite;
+    })
+  }
+
+  const wrappedToggleModal_4 = () => {
+    setModalOn_4(prev => {
       const opposite =!prev;
       bodyCannotScrollCheck(opposite);
       return opposite;
@@ -123,6 +134,32 @@ export default function AppsWork(){
                 <span
                   className="button button--flex button--small button--link services__button"
                   onClick={wrappedToggleModal_3}
+                >
+                  View More
+                  <i className="uil uil-arrow-right button__icon"></i>
+                </span>
+              </div>
+
+            </div>
+          </div>
+
+          {/* <!--====== App 4=======--> */}
+          <div className="services__content">
+            <div className=" ">
+
+              <h3 className="services__title">
+              <span className="uil uil-web-grid services__icon"></span>
+                Go Todo App  - 
+                <i className="testimonial__client">Full stack</i>
+                
+              </h3>
+              <div className="">
+                <img src="assets/images/go-todo-app.png" alt="" className="myapps__img" />
+              </div>
+              <div className="services__button__parrent">
+                <span
+                  className="button button--flex button--small button--link services__button"
+                  onClick={wrappedToggleModal_4}
                 >
                   View More
                   <i className="uil uil-arrow-right button__icon"></i>
@@ -222,6 +259,37 @@ export default function AppsWork(){
                 <br />
                 <a
                   href="https://bijianwu.github.io/blog/"
+                  target="_blank"
+                  className="button button--flex button--small button--link"
+                >
+                  Link to the web app I created
+                  <i className="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            {/* modal for app 4 */}
+            <div className={`services__modal ${modalStyles_4}`}>
+              <div className="hidden-clickable"  onClick={wrappedToggleModal_4}></div>
+              <div className="services__modal-content">
+                <h4 className="services__modal-title">Go todo app</h4>
+   
+                <p className="services__modal-des">
+                  Made by using ReactJS on the front-end, and styled using Material UI, and use Go and Mongo db on the backend
+                </p>
+                <ul className="services__modal-services grid">
+                  <li className="services__modal-service">
+                    <i className="uil uil-check-circle services__modal-icon"></i>
+                    <p>tracking todos, goals and bookmarks</p>
+                  </li>
+                  <li className="services__modal-service">
+                    <i className="uil uil-check-circle services__modal-icon"></i>
+                    <p>working user authentication</p>
+                  </li>
+                </ul>
+                <br />
+                <a
+                  href="https://bijianwu.github.io/forever-goal-frontend"
                   target="_blank"
                   className="button button--flex button--small button--link"
                 >
