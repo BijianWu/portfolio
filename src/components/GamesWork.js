@@ -9,6 +9,8 @@ import GameModal7 from "./GameModal7";
 import GameModal8 from "./GameModal8";
 import GameModal9 from "./GameModal9";
 import GameModal10 from "./GameModal10";
+import GameModal11 from "./GameModal11";
+
 export default function GamesWork(){
   const[isModal1On, toggleModal_1] = useState(false);
   const[isModal2On, toggleModal_2] = useState(false);
@@ -20,6 +22,8 @@ export default function GamesWork(){
   const[isModal8On, toggleModal_8] = useState(false);
   const[isModal9On, toggleModal_9] = useState(false);
   const[isModal10On, toggleModal_10] = useState(false);
+  const[isModal11On, toggleModal_11] = useState(false);
+
   const bodyCannotScrollCheck = (isModalOn) => {
     if(isModalOn){
       if(!document.body.classList.contains("cannotScroll")){
@@ -104,6 +108,14 @@ export default function GamesWork(){
 
   const wrappedToggleModal_10 = () => {
     toggleModal_10(prev => {
+      const opposite =!prev;
+      bodyCannotScrollCheck(opposite);
+      return opposite;
+    })
+  }
+
+  const wrappedToggleModal_11 = () => {
+    toggleModal_11(prev => {
       const opposite =!prev;
       bodyCannotScrollCheck(opposite);
       return opposite;
@@ -213,102 +225,127 @@ export default function GamesWork(){
                 >
                   Demo
                   <i className="uil uil-arrow-right button__icon"></i>
-                </span>
-                <GameModal5 isActive={isModal5On} toggleActive={wrappedToggleModal_5}/>
+                  </span>
+                  <GameModal5 isActive={isModal5On} toggleActive={wrappedToggleModal_5}/>
+                </div>
               </div>
-            </div>
-            {/* <!--====== PORTFOIL 6=======--> */}
-            <div className="portfolio__content grid swiper-slide">
-              <img src="assets/images/6.png" alt="" className="portfolio__img" />
+              {/* <!--====== PORTFOIL 6=======--> */}
+              <div className="portfolio__content grid swiper-slide">
+                <img src="assets/images/6.png" alt="" className="portfolio__img" />
 
-              <div className="protfolio__data to-end">
-                <h3 className="portfolio__title">Galactic Get Away</h3>
-                <p className="portfolio__description">Mobile puzzle game made using Unity</p>
-                <span
-                  className="button button--flex button--small services__button" onClick={wrappedToggleModal_6}
-                >
-                  Demo
-                  <i className="uil uil-arrow-right button__icon"></i>
-                </span>
-                <GameModal6 isActive={isModal6On} toggleActive={wrappedToggleModal_6}/>
+                <div className="protfolio__data to-end">
+                  <h3 className="portfolio__title">Galactic Get Away</h3>
+                  <p className="portfolio__description">Mobile puzzle game made using Unity</p>
+                  <span
+                    className="button button--flex button--small services__button" onClick={wrappedToggleModal_6}
+                  >
+                    Demo
+                    <i className="uil uil-arrow-right button__icon"></i>
+                  </span>
+                  <GameModal6 isActive={isModal6On} toggleActive={wrappedToggleModal_6}/>
+                </div>
               </div>
-            </div>
-            {/* <!--====== PORTFOIL 7=======--> */}
-            <div className="portfolio__content grid swiper-slide">
-              <img src="assets/images/7.png" alt="" className="portfolio__img" />
 
-              <div className="protfolio__data to-end">
-                <h3 className="portfolio__title">Machine Battle Field</h3>
-                <p className="portfolio__description">
-                  AR Mobile Multiplayer game made using Unity
-                </p>
-                <span
-                  className="button button--flex button--small services__button" onClick={wrappedToggleModal_7}
-                >
-                  Demo
-                  <i className="uil uil-arrow-right button__icon"></i>
-                </span>
-                <GameModal7 isActive={isModal7On} toggleActive={wrappedToggleModal_7}/>
+              {/* <!--====== PORTFOIL 7=======--> */}
+              <div className="portfolio__content grid swiper-slide">
+                <img src="assets/images/7.png" alt="" className="portfolio__img" />
+
+                <div className="protfolio__data to-end">
+                  <h3 className="portfolio__title">Machine Battle Field</h3>
+                  <p className="portfolio__description">
+                    AR Mobile Multiplayer game made using Unity
+                  </p>
+                  <span
+                    className="button button--flex button--small services__button" onClick={wrappedToggleModal_7}
+                  >
+                    Demo
+                    <i className="uil uil-arrow-right button__icon"></i>
+                  </span>
+                  <GameModal7 isActive={isModal7On} toggleActive={wrappedToggleModal_7}/>
+                </div>
               </div>
-            </div>
-            {/* <!--====== PORTFOIL 8=======--> */}
-            <div className="portfolio__content grid swiper-slide">
-              <img src="assets/images/8.png" alt="" className="portfolio__img" />
 
-              <div className="protfolio__data to-end">
-                <h3 className="portfolio__title">PIXI multiplayer</h3>
-                <p className="portfolio__description">
-                  Brower-based Multiplayer game made using JavaScript
-                </p>
-                <span
-                  className="button button--flex button--small services__button" onClick={wrappedToggleModal_8}
-                >
-                  Demo
-                  <i className="uil uil-arrow-right button__icon"></i>
-                </span>
-                <GameModal8 isActive={isModal8On} toggleActive={wrappedToggleModal_8}/>
+              {/* <!--====== PORTFOIL 8=======--> */}
+              <div className="portfolio__content grid swiper-slide">
+                <img src="assets/images/8.png" alt="" className="portfolio__img" />
+
+                <div className="protfolio__data to-end">
+                  <h3 className="portfolio__title">PIXI multiplayer</h3>
+                  <p className="portfolio__description">
+                    Brower-based Multiplayer game made using JavaScript
+                  </p>
+                  <span
+                    className="button button--flex button--small services__button" onClick={wrappedToggleModal_8}
+                  >
+                    Demo
+                    <i className="uil uil-arrow-right button__icon"></i>
+                  </span>
+                  <GameModal8 isActive={isModal8On} toggleActive={wrappedToggleModal_8}/>
+                </div>
               </div>
-            </div>
-            {/* <!--====== PORTFOIL 9=======--> */}
-            <div className="portfolio__content grid swiper-slide">
-              <img src="assets/images/9.png" alt="" className="portfolio__img" />
 
-              <div className="protfolio__data to-end">
-                <h3 className="portfolio__title">Galactic Warrors</h3>
-                <p className="portfolio__description">
-                  Mobile Platformer Shooter Multiplayer game made using Unity
-                  and LiteNetLib server
-                </p>
-                <span
-                  className="button button--flex button--small services__button" onClick={wrappedToggleModal_9}
-                >
-                  Demo
-                  <i className="uil uil-arrow-right button__icon"></i>
-                </span>
-                <GameModal9 isActive={isModal9On} toggleActive={wrappedToggleModal_9}/>
+              {/* <!--====== PORTFOIL 9=======--> */}
+              <div className="portfolio__content grid swiper-slide">
+                <img src="assets/images/9.png" alt="" className="portfolio__img" />
+
+                <div className="protfolio__data to-end">
+                  <h3 className="portfolio__title">Galactic Warrors</h3>
+                  <p className="portfolio__description">
+                    Mobile Platformer Shooter Multiplayer game made using Unity
+                    and LiteNetLib server
+                  </p>
+                  <span
+                    className="button button--flex button--small services__button" onClick={wrappedToggleModal_9}
+                  >
+                    Demo
+                    <i className="uil uil-arrow-right button__icon"></i>
+                  </span>
+                  <GameModal9 isActive={isModal9On} toggleActive={wrappedToggleModal_9}/>
+                </div>
               </div>
-            </div>
-            {/* <!--====== PORTFOIL 10=======--> */}
-            <div className="portfolio__content grid swiper-slide">
-              <img src="assets/images/10.png" alt="" className="portfolio__img" />
 
-              <div className="protfolio__data to-end">
-                <h3 className="portfolio__title">Ultimate battle legend</h3>
-                <p className="portfolio__description">
-                  Mobile Clash Royal styling game made using Unity
-                  and socket io on the backend
-                </p>
-                <span
-                  className="button button--flex button--small services__button" onClick={wrappedToggleModal_10}
-                >
-                  Demo
-                  <i className="uil uil-arrow-right button__icon"></i>
-                </span>
-                <GameModal10 isActive={isModal10On} toggleActive={wrappedToggleModal_10}/>
+              {/* <!--====== PORTFOIL 10=======--> */}
+              <div className="portfolio__content grid swiper-slide">
+                <img src="assets/images/10.png" alt="" className="portfolio__img" />
+
+                <div className="protfolio__data to-end">
+                  <h3 className="portfolio__title">Ultimate battle legend</h3>
+                  <p className="portfolio__description">
+                    Mobile Clash Royal styling game made using Unity
+                    and socket io on the backend
+                  </p>
+                  <span
+                    className="button button--flex button--small services__button" onClick={wrappedToggleModal_10}
+                  >
+                    Demo
+                    <i className="uil uil-arrow-right button__icon"></i>
+                  </span>
+                  <GameModal10 isActive={isModal10On} toggleActive={wrappedToggleModal_10}/>
+                </div>
               </div>
-            </div>
-          </div>
 
+
+              {/* <!--====== PORTFOIL 11 start =======--> */}
+              <div className="portfolio__content grid swiper-slide">
+                <img src="assets/images/11.png" alt="" className="portfolio__img" />
+
+                <div className="protfolio__data to-end">
+                  <h3 className="portfolio__title">Action shooter 2d</h3>
+                  <p className="portfolio__description">
+                    2d Top down multiplier game made using Unity and backend in C#
+                  </p>
+                  <span
+                    className="button button--flex button--small services__button" onClick={wrappedToggleModal_11}
+                  >
+                    Demo
+                    <i className="uil uil-arrow-right button__icon"></i>
+                  </span>
+                  <GameModal11 isActive={isModal11On} toggleActive={wrappedToggleModal_11}/>
+                </div>
+              </div>
+              {/* <!--====== PORTFOIL 11 end=======--> */}
+          
+            </div>
         </div>
       </section>
     </>
