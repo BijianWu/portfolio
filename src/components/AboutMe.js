@@ -24,7 +24,7 @@ export default function AboutMe(){
 
             <div className="about__info">
               <div>
-                <span className="about__info-title">04+</span>
+                <span className="about__info-title">05+</span>
                 <span className="about__info-name"
                   >Years <br />
                   experience</span
@@ -32,7 +32,7 @@ export default function AboutMe(){
               </div>
 
               <div>
-                <span className="about__info-title">20+</span>
+                <span className="about__info-title">30+</span>
                 <span className="about__info-name"
                   >Completed <br />
                   Projects</span
