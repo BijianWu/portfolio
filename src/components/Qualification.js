@@ -137,6 +137,7 @@ export default function Qualification(){
                 <div></div>
                 <div>
                   <span className="qualification__rounder"></span>
+                  <span className="qualification__line"></span>
                 </div>
                 
                 <div>
@@ -146,12 +147,35 @@ export default function Qualification(){
                   >
                   <div className="qualification__calendar">
                     <i className="uil uil-calendar-alt"></i>
-                    2023 - current
+                    2023 - 2025
                   </div>
                 </div>
-                
 
               </div>
+
+              {/* <!--====== WORK 5 =======--> */}
+              <div className="qualification__data">
+                {/* <div></div> */}
+
+                
+                <div>
+                  <h3 className="qualification__title">Tech Lead</h3>
+                  <span className="qualification__subtitle"
+                    >HUNGRY BEAR GAMING LTD</span
+                  >
+                  <div className="qualification__calendar">
+                    <i className="uil uil-calendar-alt"></i>
+                    2025 - current
+                  </div>
+                </div>
+                <div>
+                  <span className="qualification__rounder"></span>
+                  {/* <span className="qualification__line"></span> */}
+                </div>
+
+              </div>
+
+
             </div>
           </div>
         </div>
