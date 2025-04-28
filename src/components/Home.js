@@ -58,7 +58,7 @@ export default function Home(){
                   <image
                     className="home__blob-img"
                     x="12"
-                    y="2"
+                    y="-40"
                     xlinkHref="assets/images/bijian_wu.png"
                   />
                 </g>
