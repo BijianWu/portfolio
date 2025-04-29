@@ -29,7 +29,7 @@ export default function Skills(){
 
                 <div>
                     <h1 className="skills__titles">Backend Developer</h1>
-                    <span className="skills__subtitle">More than 4 years</span>
+                    <span className="skills__subtitle">More than 5 years</span>
                 </div>
 
                 <i className="uil uil-angle-down skills__arrow"></i>
@@ -89,7 +89,7 @@ export default function Skills(){
 
             <div>
                 <h1 className="skills__titles">Frontend Developer</h1>
-                <span className="skills__subtitle">More than 4 years</span>
+                <span className="skills__subtitle">More than 5 years</span>
             </div>
             <i className="uil uil-angle-down skills__arrow"></i>
             </div>
@@ -156,7 +156,7 @@ export default function Skills(){
 
         <div>
             <h1 className="skills__titles">Game Developer</h1>
-            <span className="skills__subtitle">More than 4 years</span>
+            <span className="skills__subtitle">More than 5 years</span>
         </div>
 
         <i className="uil uil-angle-down skills__arrow"></i>
@@ -213,7 +213,7 @@ export default function Skills(){
 
                 <div>
                 <h1 className="skills__titles">Software Developer</h1>
-                <span className="skills__subtitle">More than 4 years</span>
+                <span className="skills__subtitle">More than 5 years</span>
                 </div>
                 <i className="uil uil-angle-down skills__arrow"></i>
             </div>
